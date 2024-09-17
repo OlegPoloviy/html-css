@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="вебсайт для кав'ярні 45-ті">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <title>Coffee shop "As vikings"</title>
+</head>
+<body>
+<section class="head">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu">Breakfasts</a></li>
+                <li><a href="#about">Coffee</a></li>
+                <li><a href="#reservation">Order a table</a></li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h3>We got coffee that you deserve</h3>
+            <h1>Coffee shop "As vikings"</h1>
+        </div>
+        <button class="btn">Read about us</button>
+    </header>
+</section>
+
+<section id="about">
+    <div class="text_about">
+        <h2>About our coffee</h2>
+        <p>Located in the heart of Lviv, we are your cozy destination for premium coffee, freshly baked goods, and a warm, inviting atmosphere...</p>
+    </div>
+    <img src="./media/img.png" alt="coffee">
+</section>
+
+<section id="menu">
+    <div class="menu_container">
+        <h2>Our Menu</h2>
+        <ul>
+            <li><span class="item-name">Espresso</span> - <span class="item-price">$3.00</span></li>
+            <li><span class="item-name">Cappuccino</span> - <span class="item-price">$4.50</span></li>
+            <li><span class="item-name">Latte</span> - <span class="item-price">$4.00</span></li>
+            <li><span class="item-name">Mocha</span> - <span class="item-price">$4.75</span></li>
+            <li><span class="item-name">Iced Coffee</span> - <span class="item-price">$3.75</span></li>
+            <li><span class="item-name">Croissant</span> - <span class="item-price">$2.50</span></li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact_container">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 123 Coffee Street, Lviv, Ukraine</p>
+        <p><strong>Phone:</strong> +380 123 456 789</p>
+        <p><strong>Follow us on:</strong></p>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="reservation">
+    <div class="reservation_container">
+        <h2>Book a Table</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div>
+                <label for="people">Number of people:</label>
+                <select id="people" name="people" required>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                </select>
+            </div>
+            <div>
+                <label for="callback">Call me back:</label>
+                <input type="checkbox" id="callback" name="callback">
+            </div>
+            <div>
+                <label for="requests">Special requests:</label>
+                <textarea id="requests" name="requests" placeholder="Any special requests?"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

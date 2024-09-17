@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    font-family: "Clicker Script";
+    font-size: 40px;
+}
+
+.head{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./media/coffee_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.navbar ul{
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h3{
+    font-family: "Arial";
+    font-size: 40px;
+}
+
+.title{
+    width: 30%;
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+}
+
+.title h1{
+    font-size: 40px;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.navbar ul a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+    border: 2px solid orange;
+    border-radius: 10%;
+    background-color: #F9C06A;
+}
+
+#about{
+    height: 50vh;
+    background-color: #fff9f1;
+    width: 100%;
+    display: flex;
+}
+
+.text_about{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#about p{
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#about h2{
+    color: #603809;
+}
+
+#about img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-left: 5vw;
+}
+
+#menu {
+    background-color: #fff9f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    color: #603809;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu_container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_container li {
+    font-size: 24px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_container .item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.menu_container .item-price {
+    font-weight: bold;
+    color: #F9A602;
+}
+#contact {
+    background-color: #fff9f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #603809;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact_container p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact_container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact_container ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact_container ul li a {
+    font-size: 20px;
+    color: #603809;
+    text-decoration: none;
+}
+
+.contact_container ul li a:hover {
+    text-decoration: underline;
+}
+
+#reservation {
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reservation h2 {
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.reservation_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation_container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation_container form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.reservation_container form input[type="text"],
+.reservation_container form input[type="tel"],
+.reservation_container form input[type="date"],
+.reservation_container form input[type="time"],
+.reservation_container form select,
+.reservation_container form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reservation_container form input[type="checkbox"] {
+    width: auto;
+}
+
+.reservation_container form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.reservation_container form input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #6b8e23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation_container form input[type="submit"]:hover {
+    background-color: #556b2f;
+}
+
+.reservation_container form input::placeholder,
+.reservation_container form textarea::placeholder {
+    color: #888;
+}
+
+.reservation_container form input:focus,
+.reservation_container form select:focus,
+.reservation_container form textarea:focus {
+    outline: none;
+    border-color: #6b8e23;
+}
+
+.reservation_container form div label[for="callback"] {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+}
